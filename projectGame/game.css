@@ -1,0 +1,110 @@
+* { margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative
+}
+
+section {
+	height: 100vh;
+	background-color: rgb(64, 128, 128); 
+	font-family: sans-serif;
+}
+
+/*.reset{
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	width: 100px;
+	height: 40px;
+	background: none;
+	border-style: outset;
+	background-color: rgb(255, 128, 0);
+	font-size: 20px;
+	cursor: pointer;
+}*/
+
+.player, .computer{
+	color: white;
+	height: 20vh;
+	display: inline-block;
+	justify-content: space-around;
+	align-items: center;
+	}
+
+
+.player h2, .computer h2{
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.player p, .computer p {
+	text-align: center;
+	padding: 1px;
+	font-size: 30px;
+	}
+
+.start, .winner {
+	color: white;
+	text-align: center;	
+	font-size: 50px;
+	padding-top: 10vh;
+	transition: opacity 0.5s ease
+}
+
+.start button, .choice button {
+	width: 100px;
+	height: 40px;
+	background: none;
+	border-style: outset;
+	background-color: rgb(255, 128, 0);
+	font-size: 20px;
+	cursor: pointer;	
+}
+
+.pick {
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	color: white;	
+	font-size: 50px;
+	transition: opacity 1s ease
+}
+
+
+.hand {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.choice {
+	text-align: center;
+}
+
+
+.playerHand {
+	transform: rotateY(180deg);
+}
+
+div.fadeOut{
+	opacity: 0;
+	pointer-events: none;
+}
+
+div.fadeIn{
+	opacity: 1;
+	pointer-events: all;
+}
+
+.restart{
+	position: absolute;
+	top: 5%;
+	left: 85%;
+	color: yellow;
+}
+
+
